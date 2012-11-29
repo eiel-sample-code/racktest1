@@ -9,6 +9,7 @@ require 'erb'
 
    def body
      html = open('index.html.erb').read
-     ERB.new(html).result
+     title = "Rack test"
+     ERB.new(html).result(binding)
    end
  end

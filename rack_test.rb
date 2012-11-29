@@ -8,6 +8,7 @@ require 'erb'
    end
 
    def body
-     open('index.html.erb').read
+     html = open('index.html.erb').read
+     ERB.new(html).result
    end
  end

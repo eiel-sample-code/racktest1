@@ -8,23 +8,6 @@ require 'erb'
    end
 
    def body
-     '<html>
-        <head><title>Rack test</title></head>
-        <body>
-        <h1>Rack test</h1>
-        <p>
-           <% (1..9).each do |y| %>
-             <%= y %>
-           <% end %>
-           <%(1..9).each do |x|%>
-             <%= x %>
-             <%(1..9).each do |y|%>
-               <%= x*y %>
-             <% end %>
-          <% end %>
-        </p>
-        </body>
-        </html>
-        '
+     open('index.html.erb').read
    end
  end

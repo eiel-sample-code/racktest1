@@ -2,17 +2,17 @@
   <head><title>Rack test</title></head>
   <body>
     <h1>Rack test</h1>
-    <p>
-      <% (1..9).each do |y| %>
-        <%= y %>
+    <% (1..9).each do |y| %>
+      <p>
+        y = <%= y %>
+      </p>
+    <% end %>
+    <%(1..9).each do |x|%>
+      <%(1..9).each do |y|%>
+        <p>
+          <%= x %> * <%= y %> = <%= x*y %>
+        </p>
       <% end %>
-      <%(1..9).each do |x|%>
-        <%= x %>
-        <%(1..9).each do |y|%>
-          <%= x*y %>
-        <% end %>
-      <% end %>
-    </p>
+    <% end %>
   </body>
 </html>
-

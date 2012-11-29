@@ -1,4 +1,3 @@
-//rack_test.rb
 require 'rubygems'
 require 'rack'
 require 'erb'
